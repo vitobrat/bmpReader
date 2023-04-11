@@ -46,7 +46,7 @@ int readByte(ifstream &file, int size){
 }
 
 void printInf(Bmp obj){
-    cout << "Size: " << obj.getSizeInByte() << "\n";
+    cout << "Size: " << obj.getSizeInByte()/1024 << "KB\n";
     cout << "When start data picture: " << obj.getCoordDataFile() << "\n";
     cout << "Width: " << obj.getWidthPic() << "\n";
     cout << "Height: " << obj.getHeightPic() << "\n";
